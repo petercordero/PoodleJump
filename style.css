@@ -2,5 +2,5 @@ body {
     text-align: center;
 }
 #board {
-    background-image: url("./images/eiffelbg.png");
+    background-image: url(./images/eiffelbg.png);
 }

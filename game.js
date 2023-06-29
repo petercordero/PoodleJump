@@ -11,10 +11,14 @@ window.onload = function () {
   canvas.width = boardWidth;
   ctx = board.getContext("2d");
 
+  backgroundImg = new Image();
+  backgroundImg.src = "./images/eiffelbg.png"
+
   poodleImg = new Image();
   poodleImg.src = "./images/poodle.png"
   poodle.img = poodleImg;
   poodleImg.onload = function () {
+    ctx.drawImage(backgroundImg, 0, 0, boardWidth, boardHeight)
     ctx.drawImage(poodle.img, poodle.x, poodle.y, poodle.width, poodle.height);
   }
   
